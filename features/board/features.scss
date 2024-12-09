@@ -1,0 +1,121 @@
+//CardBoard
+.card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    .title-area {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .input {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 8px;
+            input {
+                font-size: 24px;
+                outline: none;
+                background: transparent;
+                font-weight: 600;
+            }
+        }
+        .chevronup {
+            color: #6d6d6d;
+        }
+    }
+    .card-area {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__calendar {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            //date-picker
+            .date-group {
+                max-width: 256px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                p {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 1;
+                    color: #6d6d6d;
+                }
+                .button {
+                    width: 280px;
+                    justify-content: flex-start;
+                    text-align: left;
+                    font-weight: 400;
+                }
+                .calendar-icon {
+                    margin-right: 8px;
+                    height: 16px;
+                    width: 16px;
+                }
+                .popover-content {
+                    width: auto;
+                    padding: 0;
+                }
+            }
+        }
+        &__btn {
+            display: flex;
+            align-items: center;
+            .red {
+                font-weight: 400;
+                color: #dc2626;
+
+                &:hover {
+                    color: #dc2626;
+                    background-color: #fef2f2;
+                }
+            }
+        }
+    }
+    .separator {
+        margin: 12px 0 -5px;
+    }
+    Button {
+        color: #6d6d6d;
+    }
+}
+
+//ME-Dialog
+.dialog {
+    &__header {
+        display: flex;
+        flex-direction: column;
+        .header-box {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 8px;
+            .checkbox {
+                margin-top: 3px;
+            }
+            input {
+                width: 100%;
+                outline: none;
+                background: transparent;
+            }
+        }
+    }
+    &__date {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &__markdown {
+        height: 480px;
+    }
+}

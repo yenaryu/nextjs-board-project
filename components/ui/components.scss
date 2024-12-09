@@ -1,0 +1,28 @@
+//date-picker
+.date-group {
+    max-width: 256px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1;
+        color: #6d6d6d;
+    }
+    .button {
+        width: 280px;
+        justify-content: flex-start;
+        text-align: left;
+        font-weight: 400;
+    }
+    .calendar-icon {
+        margin-right: 8px;
+        height: 16px;
+        width: 16px;
+    }
+    .popover-content {
+        width: auto;
+        padding: 0;
+    }
+}
